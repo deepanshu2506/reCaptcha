@@ -1,0 +1,67 @@
+@import "../../../../static/variables.scss";
+.captchaContainer {
+  width: 35%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: $primary;
+  text-align: left;
+  padding: 1rem;
+  h3 {
+    font-weight: 400;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  h1 {
+    margin: 0;
+    font-weight: 800;
+  }
+  p {
+    margin: 0;
+    font-size: 0.8rem;
+    margin-left: 5px;
+  }
+}
+
+.captchaBody {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selectableImage {
+  width: calc(33.33% - 2px);
+  border: 1px solid transparent;
+  cursor: pointer;
+  position: relative;
+  img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.footer {
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+}
